@@ -8,8 +8,6 @@ public class SplineSnappingTool : ModuleRules
 {
 	public SplineSnappingTool(ReadOnlyTargetRules Target) : base(Target)
 	{
-		/*PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;*/   PCHUsage = ModuleRules.PCHUsageMode.NoPCHs; bUseUnity = false;
-
 		PrivateIncludePaths.AddRange(
 			new string[] {
 				"SplineSnappingTool/Private",
