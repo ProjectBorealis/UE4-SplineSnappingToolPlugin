@@ -71,8 +71,8 @@ private:
 
 	TSharedPtr<FUICommandList> SplineSnappingUICommandList;
 	FScopedTransaction* ScopedTransaction;
-	const USplineComponent* SelectedSplineComp;
-	USelection* SelectedActors;
+	TObjectPtr<const USplineComponent> SelectedSplineComp;
+	TObjectPtr<USelection> SelectedActors;
 	bool bSnapEnabled;
 	bool bSplineHovered;
 	bool bCanSelectNewSpline;
